@@ -136,7 +136,7 @@ async function findFilterMovie() {
     console.log(eventFilter)
     
         row.innerHTML = "";
-        let linkAPI = await fetch(`http://api.tvmaze.com/search/shows?q=${sessionStorage.getItem('valueSearch')}`);
+        let linkAPI = await fetch(`https://api.tvmaze.com/search/shows?q=${sessionStorage.getItem('valueSearch')}`);
         let linkJson = await linkAPI.json();
         let filmsCatalog = [];
         for (let film = 0; film < linkJson.length; film++) {
