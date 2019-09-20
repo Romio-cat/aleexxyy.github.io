@@ -6,7 +6,7 @@
     
     async function search(){
         row.innerHTML = "";
-        let linkAPI = await fetch(`http://api.tvmaze.com/search/shows?q=${nameSearch.value}`);
+        let linkAPI = await fetch(`https://api.tvmaze.com/search/shows?q=${nameSearch.value}`);
         let linkJson = await linkAPI.json();
         let reatCatalog = new ServiceProduction(row, linkJson);
         reatCatalog.create('Follow', addFavore);
