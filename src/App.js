@@ -78,11 +78,6 @@ class App extends React.Component{
     }
     componentDidMount(){
         this.searchLink();
-        // window.onload = () => {
-        //     this.searchLink();
-        //     console.log(2)
-        // }
-       
     }
     render(){
         return (
